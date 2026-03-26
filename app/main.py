@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from bson import ObjectId
-from app.utils.user import User,UserLogin,PredictionInput
-from app.services.predictor import predict_future_roles
-from app.utils.database import user_collection as user_table,history_collection as history_table
+from utils.user import User,UserLogin,PredictionInput
+from services.predictor import predict_future_roles
+from utils.database import user_collection as user_table,history_collection as history_table
 
 
 app = FastAPI(
